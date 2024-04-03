@@ -1,0 +1,340 @@
+/* Define common variables */
+:root {
+    /* Colors */
+    --primary-color: #333;
+    --secondary-color: #555;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+    --link-color: blue;
+    --primary-color1:#E62D27;
+
+    /* Fonts */
+    --font-family: Arial, sans-serif;
+
+    /* Layout sizes */
+    --max-width: 75rem; /* 1200px */
+    --container-padding: 1.25rem; /* 20px */
+    --container-size:1500px
+    /* Other properties */
+    --border-radius: 0.3125rem; /* 5px */
+    --line-height: 1.6;
+
+    /* Padding */
+    --p1: 0.25rem; /* 4px */
+    --p2: 0.5rem; /* 8px */
+    --p3: 0.75rem; /* 12px */
+    --p4: 1rem; /* 16px */
+    --p5: 1.25rem; /* 20px */
+    --p6: 1.5rem; /* 24px */
+    --p7: 1.75rem; /* 28px */
+    --p8: 2rem; /* 32px */
+    --p9: 2.25rem; /* 36px */
+    --p10: 2.5rem; /* 40px */
+
+    /* Margin */
+    --m1: 0.25rem; /* 4px */
+    --m2: 0.5rem; /* 8px */
+    --m3: 0.75rem; /* 12px */
+    --m4: 1rem; /* 16px */
+    --m5: 1.25rem; /* 20px */
+    --m6: 1.5rem; /* 24px */
+    --m7: 1.75rem; /* 28px */
+    --m8: 2rem; /* 32px */
+    --m9: 2.25rem; /* 36px */
+    --m10: 2.5rem; /* 40px */
+
+    /* Border radius */
+    --b-rio1: 0.25rem; /* 4px */
+    --b-rio2: 0.5rem; /* 8px */
+
+    /* Line height */
+    --lh1: 50%; 
+    --lh2: 100%;
+    --lh3: 150%;
+    /* Font size */
+    --fs-10: 1rem; /* 16px */
+    --fs-12: 1.25rem; /* 20px */
+    --fs-14: 1.5rem; /* 24px */
+    --fs-16: 1.75rem; /* 28px */
+    --fs-18: 2rem; /* 32px */
+    --fs-20: 2.25rem; /* 36px */
+    --fs-22: 2.5rem; /* 40px */
+    --fs-24: 2.75rem; /* 44px */
+    --fs-26: 3rem; /* 48px */
+    --fs-28: 3.25rem; /* 52px */
+    --fs-30: 3.5rem; /* 56px */
+    --fs-32: 3.75rem; /* 60px */
+    --fs-34: 4rem; /* 64px */
+    --fs-36: 4.25rem; /* 68px */
+    --fs-38: 4.5rem; /* 72px */
+    --fs-40: 4.75rem; /* 76px */
+
+    /* Font weight */
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+    --fw-900: 900;
+
+    /* Base font sizes */
+    --base-font-size-mobile: 0.75rem; /* 12px */
+    --base-font-size-tablet: 0.875rem; /* 14px */
+    --base-font-size-desktop: 1rem; /* 16px */
+}
+html {
+    font-size: 16px; /* Set the base font size for the root element */
+  }
+/* Define media queries */
+@media (max-width: 768px) {
+    /* Tablet styles */
+    html {
+        font-size: 12px;
+    }
+   
+
+}
+
+@media (max-width: 1024px) {
+    /* Desktop styles */
+    html {
+        font-size: 14px;
+    }
+    .hero{
+        flex-direction: column !important ;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Desktop styles */
+    html {
+        font-size: 8px;
+    }
+    .hero>img{
+       height: 20rem;
+       width: 100% !important;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    .hero>img{
+        height: 20rem; 
+        width: 30rem ;
+    }
+}
+
+/* Use variables */
+body {
+    font-family: var(--font-family);
+    line-height: var(--line-height);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Add more styles using variables as needed */
+
+/* common style */
+.common-grid{
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* form-input */
+form>input{
+    padding: var(--p2);
+    border:none;
+    counter-reset: white;
+    align-items: center;
+    border-radius: var(--b-rio1);
+}
+
+form>input:focus{
+    border:none !important;
+}
+
+form{
+    display: flex;
+    gap: .4em;
+    align-items: center;
+}
+/* common button style  */
+
+button{
+    padding: .2em 1em;
+    border-radius: var(--b-rio1);
+    border: .14em solid gray;
+    background-color: transparent;
+    font-size: var(--fs-12);
+    color: gray;
+    font-weight: var(--fw-600);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: transparent;
+    border: .14em solid var(--primary-color1);
+    color: var(--primary-color1);
+}
+
+/* header styling */
+
+.container{
+    font-size: var(--fs-12);
+    background-color: #000000;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.181);
+}
+
+.header-container{
+    max-width: var(--container-size);
+    padding: 0 8%;
+}
+
+header{
+    flex: 0.2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+nav>ul{
+    flex: 0.4;
+  display: flex;
+}
+li{
+    width: fit-content;
+    padding: 0 .4em;
+    display: flex;
+}
+li>a{
+    text-decoration: none;
+    color: gray;
+}
+li>a:hover{
+    text-decoration: none;
+    color: var(--primary-color1);
+}
+
+.logo>img{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 4em;
+    height: 2.2em;
+}
+
+
+/* hero section */
+.hero{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    padding: var(--p10);
+    justify-content: space-around;
+    height: 80vh;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.hero>img{
+    height: 30rem;
+    width: 40rem;
+}
+.hero>img:hover{
+}
+.hero-text{
+    color: gray;
+}
+.hero-text>h1{
+    font-size: var(--fs-26);
+}
+
+.hero-text>p{
+    font-size: var(--fs-16);
+}
+
+
+/* middle section  */
+
+.normal-section{
+    background-color: rgb(181, 181, 181);
+    padding: var(--p10);
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(17, 17, 17);
+    flex-direction: column;
+}
+
+.normal-section>h2{
+    margin: var(--m2);
+    line-height: var(--lh2) ;
+    font-size: var(--fs-30);
+}
+
+/* testimonial section */
+
+.testimonial-section{
+    background-color: var(--white);
+    padding: 4rem 8%;
+}
+
+.testimonial{
+    height: auto;
+    width: auto;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: var(--p4);
+    border-radius: var(--b-rio2);
+    box-shadow: 4px 4px 15px rgb(188, 188, 188);
+}
+
+.testimonial>img{
+    object-fit: cover;
+    height: 14rem;
+    width: 100%;
+}
+
+
+
+/* news-letter */
+
+.newsletter{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 8%;
+}
+
+
+footer{
+    background-color: black;
+}
+
+footer>nav{
+    padding: 4rem 8%;
+   
+}
+
+footer>nav>ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.copy-right{
+    padding: 0 8%;
+}
+
+.sm-footer{
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
