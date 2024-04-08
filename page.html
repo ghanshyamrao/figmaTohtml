@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Title Here</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="header-container">
-        <header>
-          <!-- Logo, links, action sign, login button -->
-          <div class="logo">
-            <img src="./svgs/youtube.svg" alt="Logo" />
-          </div>
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Website</a></li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Title Here</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header-container">
+      <header class="header" id="header">
+        <div class="logo">
+          <img src="./svgs/youtube.svg" alt="Logo" />
+        </div>
+        <div class="menu" id="menu">
+          <nav class="navbar container">
+            <ul class="menu-inner links">
+              <li class="menu-link"><a href="#">Home</a></li>
+              <li class="menu-link"><a href="#">Services</a></li>
+              <li class="menu-link"><a href="#">About Us</a></li>
+              <li class="menu-link"><a href="#">Contact</a></li>
+              <li class="menu-link"><a href="#">Website</a></li>
             </ul>
           </nav>
-          <div class="action-sign">
-            <button class="login-button">Login</button>
-          </div>
-        </header>
-      </div>
+        </div>
+      </header>
     </div>
-    <main>
-      <!-- Hero image with text -->
-      <section class="hero hero-grid">
+  </div>
+  <script src="./index.js"></script>
+  </div>
+  <main>
+    <!-- Hero image with text -->
+    <section class="hero-section-container">
+      <div class="hero hero-grid section-container">
         <img src="images/img1.jpg" alt="Hero Image" />
         <div class="hero-text">
           <h1>Welcome to Our Website</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <button>CTA BUTTON</button>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Normal section with text and description -->
-      <section class="normal-section">
+    <!-- Normal section with text and description -->
+    <section class="common-section-container">
+      <div class="normal-section section-container">
         <h2>Section Title</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
           odio. Praesent libero.
         </p>
-      </section>
+      </div>
+    </section>
 
-      <!-- Testimonial section -->
-      <section class="testimonial-section common-grid">
+    <!-- Testimonial section -->
+    <section class="">
+      <div class="testimonial-section common-grid section-container">
         <div class="testimonial">
           <img src="./images/img2.jpg" />
           <p>
@@ -86,67 +93,101 @@
           </p>
           <span>- John Doe</span>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Newsletter section -->
-      <section class="newsletter">
+    <section class="section-container ">
+      <div class="unique-card-container common-grid">
+        <div class="card">
+          <label>
+            products
+          </label>
+          <p>
+            40m
+          </p>
+        </div>
+        <div class="card">
+          <label>
+            Projects
+          </label>
+          <p>
+            50 +
+          </p>
+        </div>
+        <div class="card">
+          <label>
+            Users
+          </label>
+          <p>
+            10k +
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Newsletter section -->
+    <section class="newsletter-section">
+      <div class="newsletter section-container">
         <div>
-            <h1 class="">Join 2,000+ subscribers</h1>
-            <p class="">Stay in the loop with everything you need to know.</p>
+          <h1 class="">Join 2,000+ subscribers</h1>
+          <p class="">Stay in the loop with everything you need to know.</p>
         </div>
 
+        <div>
+          <h2>Subscribe to Our Newsletter</h2>
+          <form>
+            <input type="email" placeholder="Enter your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <!-- Footer links -->
+      <nav class="common-grid footer-common-container">
+        <ul>
+          <h1>Link1</h1>
           <div>
-            <h2>Subscribe to Our Newsletter</h2>
-            <form>
-              <input type="email" placeholder="Enter your email" />
-              <button type="submit">Subscribe</button>
-            </form>
-        </div>
-       
-      </section>
-
-      <!-- Footer -->
-      <footer>
-        <!-- Footer links -->
-        <nav class="common-grid">
-          <ul>
-            <h1>Link1</h1>
-            <div>
-              <li><a href="#">Footer Link 1</a></li>
-              <li><a href="#">Footer Link 2</a></li>
-              <li><a href="#">Footer Link 3</a></li>
-            </div>
-          </ul>
-          <ul>
-            <h1>Link1</h1>
-            <div>
-              <li><a href="#">Footer Link 1</a></li>
-              <li><a href="#">Footer Link 2</a></li>
-              <li><a href="#">Footer Link 3</a></li>
-            </div>
-          </ul>
-          <ul>
-            <h1>Link1</h1>
-            <div>
-              <li><a href="#">Footer Link 1</a></li>
-              <li><a href="#">Footer Link 2</a></li>
-              <li><a href="#">Footer Link 3</a></li>
-            </div>
-          </ul>
-          <ul>
-            <h1>Link1</h1>
-            <div>
-              <li><a href="#">Footer Link 1</a></li>
-              <li><a href="#">Footer Link 2</a></li>
-              <li><a href="#">Footer Link 3</a></li>
-            </div>
-          </ul>
-        </nav>
-        <div class="sm-footer">
-            <div class="copy-right">© 2024 Your Company. All rights reserved.</div>
+            <li><a href="#">Footer Link 1</a></li>
+            <li><a href="#">Footer Link 2</a></li>
+            <li><a href="#">Footer Link 3</a></li>
           </div>
-      </footer>
-     
-    </main>
-  </body>
+        </ul>
+        <ul>
+          <h1>Link1</h1>
+          <div>
+            <li><a href="#">Footer Link 1</a></li>
+            <li><a href="#">Footer Link 2</a></li>
+            <li><a href="#">Footer Link 3</a></li>
+          </div>
+        </ul>
+        <ul>
+          <h1>Link1</h1>
+          <div>
+            <li><a href="#">Footer Link 1</a></li>
+            <li><a href="#">Footer Link 2</a></li>
+            <li><a href="#">Footer Link 3</a></li>
+          </div>
+        </ul>
+        <ul>
+          <h1>Link1</h1>
+          <div>
+            <li><a href="#">Footer Link 1</a></li>
+            <li><a href="#">Footer Link 2</a></li>
+            <li><a href="#">Footer Link 3</a></li>
+          </div>
+        </ul>
+      </nav>
+      <div class="sm-footer-container">
+        <div class="sm-footer footer-common-container">
+          <div class="copy-right ">© 2024 Your Company. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+
 </html>
